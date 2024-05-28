@@ -1,0 +1,272 @@
+{
+	"info": {
+		"_postman_id": "59f272c7-444a-40ba-823b-aef3e3cd7cff",
+		"name": "TP2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22455847"
+	},
+	"item": [
+		{
+			"name": "USER ROUTES",
+			"item": [
+				{
+					"name": "USERS/CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Gonzalo\",\n    \"lastName\": \"Sosin\",\n    \"school\": \"ORT\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/users/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USERS/GETUSERBYID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/users/getUserById/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"getUserById",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USERS/GETALLUSERS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/users/getAllUsers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"getAllUsers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USERS/DELETEUSERBYID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/users/deleteUserById/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"deleteUserById",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USERS/UPDATEUSERBYID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Jonathan\",\n    \"lastName\": \"Sosin\",\n    \"school\": \"ORT\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/users/updateUserById/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"updateUserById",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EXAM ROUTES",
+			"item": [
+				{
+					"name": "EXAMS/CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"subject\": \"Matematica\",\n    \"studentId\": 3,\n    \"grade\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/exams/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"exams",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXAMS/GETEXAMBYID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/exams/getExamById/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"exams",
+								"getExamById",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXAMS/GETALLEXAMS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/exams/getAllExams",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"exams",
+								"getAllExams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXAMS/DELETEEXAMBYID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/exams/deleteExamById/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"exams",
+								"deleteExamById",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EXAMS/UPDATEEXAMBYID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"subject\": \"Lengua\",\n    \"studentId\": 2,\n    \"grade\": 8\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/exams/updateExamById/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"exams",
+								"updateExamById",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

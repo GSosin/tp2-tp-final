@@ -6,13 +6,13 @@
 1. Clonación de este repositorio:
 
    ```bash
-   git clone https://github.com/tu-usuario/proyecto-crud-node-sequelize.git
+   git clone https://github.com/GSosin/tp2-tp-final.git
    ```
 
 2. Navega al directorio del proyecto:
 
    ```bash
-   cd proyecto-crud-node-sequelize
+   cd tp2-tp-final
    ```
 
 3. Instala las dependencias:
@@ -21,24 +21,18 @@
    npm install
    ```
 
-## Configuración de la Base de Datos
+## Configuración de las variables de entorno
 
-1. Configura tu base de datos en el archivo `config/database.js`.
-2. Asegúrate de tener una base de datos MySQL creada con el nombre especificado en la configuración.
-3. Ejecuta las migraciones para crear las tablas necesarias:
-
-   ```bash
-   npx sequelize-cli db:migrate
-   ```
-
-## Uso
+1. Agregá un archivo con el nombre ".env" en la raiz del proyecto.
+2. Copiá el formato archivo ".env.example" y replicalo en el archivo ".env".
+3. Rellenalo con los datos de tu Gestor de base de datos.
 
 ### Ejecución
 
 Para iniciar el servidor, ejecuta el siguiente comando:
 
 ```bash
-npm start
+    npm run dev
 ```
 
 El servidor estará disponible en http://localhost:3000 por defecto.
@@ -46,19 +40,5 @@ El servidor estará disponible en http://localhost:3000 por defecto.
 ### Pruebas con Postman
 
 1. Abre Postman.
-2. Importa la colección de solicitudes de Postman proporcionada en el directorio `tests`.
-3. Ejecuta las solicitudes para probar las diferentes rutas del CRUD.
-
-## Contribución
-
-Si deseas contribuir a este proyecto, sigue estos pasos:
-
-1. Haz un fork del repositorio.
-2. Crea una nueva rama: `git checkout -b feature-nueva-caracteristica`.
-3. Haz tus cambios y realiza un commit: `git commit -m 'Añade una nueva característica'`.
-4. Sube tus cambios: `git push origin feature-nueva-caracteristica`.
-5. Abre un pull request.
-
-## Licencia
-
-Este proyecto está bajo la [Licencia MIT](LICENSE).
+2. Importa la colección de solicitudes de Postman proporcionada en el directorio `src/tests/tests.json`.
+3. Si tienes un puerto diferente a "3000" cambialo en las solicitudes antes de probarlas.
